@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type ="image/x-icon"> 
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+                                 
+    <title>Ahorcado</title>
+</head>
+
+<body>
+    <nav >
+        <div class="mi-logo">
+            <img src="logo.png" alt="llogo" class="img">
+            <h4 class="logo">Juego del Ahorcado</h4>
+        </div>
+            <ul class="nav-links">
+                <li>
+                     <a href="#" id="uno" class="inicio">Inicio</a>
+                </li>
+                <li>
+                    <a href="#" id="dos" class="juego">Iniciar Juego </a>
+                </li>
+                <li>
+                    <a href="#" id="tres" class="agrega-palabra">Agregar palabra </a>
+                </li>
+                <li>
+                    <a href="#" id="cuatro" class="dev">Desallorador</a>
+                </li>
+        </ul>
+    </nav>
+
+    <div>
+        
+        <section id="seccion1">
+            <div id="contenedor" >
+                <ul class="saludo">
+                    <li>Welcome</li>
+                    <li>Bienvenido</li>
+                </ul>
+            </div>
+            
+            <div id="iniciar-juego">
+                
+                <div id="dibujo" class="izquierda">
+                    <canvas id="ahorcado" width="750px" height="450px"></canvas>
+                    <canvas id="letras" width="750px" height="100px"></canvas>
+                </div>
+
+                <div class="derecha">                  
+                    <h4 class="enunciado">Ingresa Letra por Letra!</h4>
+                    
+                    <div class="contLabel">
+                        <label id="letraErronea"></label>
+                    </div>
+
+                </div>
+
+                
+            </div>
+            
+            <div id="incluye-palabra">
+                <div class="aviso">
+                    <div class="container-Text">
+                        <h1>Agrega tu Palabra:</h1>
+                    </div>
+                    
+                    <input  type="text" name="Palabra" id="ingreso" autofocus >
+                    <button id="btn-aceptar">Aceptar</button>
+                    <a href="" class="close-btn">X</a>
+                    
+                </div>
+            </div>
+
+            <div id="creador" aling="center" class="fondo">
+                
+               
+                <div class="desarrollador" style="background-image: url(dev-alejandro.jpg);">
+                    <div class="nombre-desarrollador">
+                        <div class="developer">Desarrollador:</div>
+                        <div class="nombre">Alejandro Bordón</div>
+                    </div>
+               </div>
+               <div style=" padding:5px; color:#1e4944; font-weight:300; font-size:30px; font-family:'Roboto'; padding-top:20px">Programa ONE <font style="font-weight: 400;"> Alura-Latam</font></div>
+               <a class="regresar" href="" style="text-decoration: none;" target="parent"><div style="color:#1e4944; font-weight: 300; font-size: 20px; font-family: 'Roboto';">El Ahorcado</div></a>
+            </div>
+
+        </section>
+
+
+
+
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/scripStyle.js"></script>
+    <script src="js/canvas.js"></script>
+
+</body>
+</html>

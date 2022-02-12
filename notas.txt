@@ -1,0 +1,3 @@
+eventos del imput, onkeypress js
+usar focus para evitar la necesidad de un click
+instalar live server

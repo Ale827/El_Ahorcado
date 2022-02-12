@@ -1,0 +1,337 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    background: linear-gradient(#E5E5E5 0%, white 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+nav{
+
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    min-height:12vh;
+    background:linear-gradient(#9BFDEB 0% ,#E5E5E5 100%);
+    background-repeat: no-repeat;
+}
+
+.mi-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.img{
+    padding: 0%;
+    height: 65px;
+
+}
+
+.logo{
+    
+    font-family: 'Press Start 2P', cursive; /*fuente*/
+    text-transform:uppercase;
+    letter-spacing: 5px; /*espacio entre letras*/
+    font-size: 18px;/*tamaño letras*/
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-links li{
+    list-style: none; /* elimino el estilo de la lista*/
+}
+
+.nav-links a{
+    color: rgb(36, 143, 45);
+    text-decoration: none;
+    font-family: 'Special Elite', cursive;
+    letter-spacing: 3px;/* espacio entre letras*/
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#seccion1{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 550px;
+    
+   
+}
+
+#contenedor{
+    width: 100%;
+    height:100px;
+    justify-content: center;
+ 
+    line-height: 100px;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+.saludo{
+    list-style: none;
+ 
+    align-items: center;
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    letter-spacing: 15px;
+    font-size: 6em;
+
+    animation: cambiar 3s infinite;
+}
+@keyframes cambiar {
+    0%{ margin-top: 0;}
+    40%{margin-top: 0;}
+
+    45%{margin-top: -100px;}
+    80%{margin-top: -100px;}
+
+    85%{margin-top: 0px;}
+    100%{margin-top: 0px;}
+}
+
+
+#iniciar-juego{
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    height: 550px;
+    background-color: lightgrey;
+    /*display: none;*/
+}
+#ahorcado{
+   
+   background: #E5E5E5;
+}
+#letras{
+    background-color:#E5E5E5 ;
+   /* background: linear-gradient(lightgrey 0%, #E5E5E5 100%); */
+}
+
+#iniciar-juego .izquierda{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+#iniciar-juego .derecha{
+   
+    background-color: #E5E5E5;
+    width: 1245px;
+    height: 100%;
+
+
+
+}
+
+.enunciado{
+    text-align: center;
+    font-family: 'Press Start 2P', cursive; /*fuente*/
+    text-transform:uppercase;
+    letter-spacing: 5px; /*espacio entre letras*/
+    font-size: 18px;/*tamaño letras*/
+}
+
+.contLabel{
+    width: min-content;
+    overflow: hidden;
+    justify-content: center;
+
+}
+#letraErronea{
+    width: 600px;
+    height: 100%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    letter-spacing: 5px;
+    font-size: 5.5em;
+
+}
+/* diseño de popUp*/
+#incluye-palabra{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 800ms;
+  
+}
+
+.aviso{
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.5);
+    top: 50%;
+    left: 50%;
+    opacity: 0,8;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: space-between;
+    transition: all 600ms;
+
+}
+
+.container-Text{
+    width: 100%;
+    padding: 50px;
+    overflow-y: auto;
+    align-items: center;
+
+    
+}
+
+.container-Text h1{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+#ingreso{
+    width: 60%;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'Special Elite', cursive;
+    background: rgba(110, 110, 110, 0.6);
+
+}
+
+#btn-aceptar{
+    width: 180px;
+    height: 60px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 25px;
+    border: solid 1px #d6e9e6;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.close-btn{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    padding: 20px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    line-height: 10px;
+}
+
+/*desarrollador*/
+.fondo{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    padding-top: 12px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#65C6BB ;
+}
+
+.desarrollador{
+    display: table-cell;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.desarrollador .nombre-desarrollador{
+    background-color:rgba(19, 30, 33, 0.4);
+    position:absolute;
+    z-index: 1000;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.desarrollador:hover .nombre-desarrollador{
+    background-color: rgba(16, 23, 41, 0);
+
+}
+
+.desarrollador .developer{
+    position: absolute;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    padding: 7px;
+    z-index: 1000;
+    top:80%;
+    left: -80%;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 13px;
+    width: 80%;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    transition: all 0.7s;
+
+}
+
+.desarrollador:hover .developer{
+    background-color: #1e4944;
+    left: 0px;
+}
+
+.desarrollador .nombre{
+    position: absolute;
+    font-family: 'Roboto';
+    padding: 5px;
+    z-index: 1000;
+    top: 80%;
+    right: -85%;
+    margin-top: 25px;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 14px;
+    width: 80%;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    transition: all 0.7s;
+
+}
+
+.desarrollador:hover .nombre{
+    background-color: #417c74;
+    right: 0px;
+}
+
